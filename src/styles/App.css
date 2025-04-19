@@ -1,0 +1,103 @@
+
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centers child elements horizontally */
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center; /* Centers nav links */
+  width: 100%; /* Ensures nav spans the container */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%; /* Ensures grid spans the container */
+  justify-items: center; /* Centers grid items */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px; /* Limits card width for consistency */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  width: 100%; /* Ensures form spans the container */
+  align-items: center; /* Centers form elements */
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* Ensures inputs span the form */
+  max-width: 300px; /* Limits input width for consistency */
+}
+
+.form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.order-card,
+.admin-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px; 
+  text-align: center;
+}
+
+.admin-section button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-section button:hover {
+  background-color: #c82333;
+}
+
+h1 {
+  text-align: center;
+}
